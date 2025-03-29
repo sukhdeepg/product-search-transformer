@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Product Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h1 class="text-center mb-0">Semantic Product Search</h1>
+                        <p class="text-center mb-0">Powered by Sentence Transformers</p>
+                    </div>
+                    <div class="card-body">
+                        <form id="search-form" class="mb-4">
+                            <div class="input-group">
+                                <input type="text" id="search-query" class="form-control form-control-lg" 
+                                       placeholder="Describe what you're looking for..." required>
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="bi bi-search"></i> Search
+                                </button>
+                            </div>
+                            <div class="form-text mt-2">
+                                Try natural language queries like "portable audio device" or "something for gaming"
+                            </div>
+                        </form>
+
+                        <div id="search-results" class="mt-4">
+                            <!-- Results will be displayed here -->
+                        </div>
+                        
+                        <div id="loading" class="text-center d-none">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mt-4 shadow">
+                    <div class="card-header bg-light">
+                        <h3 class="mb-0">How It Works</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>This demo uses <strong>Sentence Transformers</strong> to power semantic search:</p>
+                        <ol>
+                            <li>Your search query is converted into a numerical vector using a pre-trained model</li>
+                            <li>This vector captures the semantic meaning of your query</li>
+                            <li>The system compares your query vector with pre-computed product vectors</li>
+                            <li>Products are ranked by similarity score (higher = more relevant)</li>
+                        </ol>
+                        <p>Unlike traditional keyword search, this can understand concepts and find relevant matches even when exact words don't appear in the product descriptions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
