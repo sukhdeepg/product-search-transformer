@@ -2,6 +2,9 @@
 
 This project demonstrates a real-world implementation of semantic search using Sentence Transformers and allows users to search for products using natural language queries.
 
+## Demo
+<video src="https://github.com/user-attachments/assets/bcd0390f-669c-45f4-b5fb-c55bd09125a2"></video>
+
 ## What is Semantic Search?
 
 Unlike traditional keyword-based search that only finds exact matches, semantic search understands the meaning behind words. This means it can find relevant results even when the exact keywords aren't present in the product descriptions.
