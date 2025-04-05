@@ -13,7 +13,7 @@ Unlike traditional keyword-based search that only finds exact matches, semantic 
 
 ### 1. Sentence Transformers
 
-Sentence Transformers is a Python library that provides easy-to-use methods to compute dense vector representations (embeddings) for sentences, paragraphs, and images. These embeddings capture semantic meaning, making them perfect for tasks like semantic search.
+[Sentence Transformers](https://pypi.org/project/sentence-transformers/) is a Python library that provides easy-to-use methods to compute dense vector representations (embeddings) for sentences, paragraphs, and images. These embeddings capture semantic meaning, making them perfect for tasks like semantic search.
 
 ### 2. The Embedding Process
 
